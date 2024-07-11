@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "docker-inspect2compose"
+version = "0.1.0"
+description = "A tool to convert Docker container information into a Docker Compose service definition."
+authors = ["Andrew Perry <ajperry@pansapiens.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+docker = "^7.1.0"
+PyYAML = "^6.0.1"
+
+[tool.poetry.scripts]
+docker-inspect2compose = "docker_inspect2compose.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
